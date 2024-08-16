@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+                    <h1 class="mt-4">Определение животного</h1>
+                   <form action="/form/result" enctype="multipart/form-data" method="POST">
+    <input accept=".wav, .mp3" type="file" placeholder="Загрузить фудио-файл" name="audio">
+    <input type="submit" value="Определить">
+</form>
+                    <br>
+                    <p><b>Внимание:</b> Определение может занимать до пары минут. Не загружайте файлы меньше 5 секунд</p>
+{% endblock %}
